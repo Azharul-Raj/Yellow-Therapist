@@ -7,8 +7,8 @@ function App() {
 
   return (
     <>
-    <div className="px-[5%] bg-yellow-100">
      <HomePage/>
+    <div className="px-[5%] bg-yellow-100">
     </div>
     <Footer/>
     </>

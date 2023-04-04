@@ -11,12 +11,12 @@ export default function Nav() {
         <div className="fixed bg-yellow-100 w-full lg:pt-2 px-5 left-0">
     <div className="flex lg:flex-row justify-between items-center">
         {/* logo part */}
-        <div className="h-20 w-10 block lg:w-36">
+        <div className="h-20 w-20 block lg:w-36">
             <img src={logo} alt="" />
         </div>
         {/*  */}
 
-        <div className={`flex-col ${open?"flex-start":"hidden lg:flex lg:flex-row lg:space-x-5 lg:relative"}  items-center `}>
+        <div className={` bg-red-500 ${open?"block":"hidden lg:flex lg:flex-row lg:space-x-5 lg:relative"}  items-center `}>
             <li className="list-none font-semibold">
             <Link to={"/"}>Home</Link>
             </li>

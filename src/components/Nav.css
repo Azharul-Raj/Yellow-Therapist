@@ -1,3 +1,30 @@
+/* .main{
+    display: flex; 
+    justify-content: space-between;
+} */
+/* .main{
+    transition: all 2s ease;
+} */
+/* .inactive-nav{
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    background: cyan;
+    transform: translateX(100%) ;
+    transition: all .5s linear;
+} */
+/* .side-nav{
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    background: cyan;
+    transform: translateX(50%);
+    transition: all .5s linear;
+} */
+.wrapper{
+    display: flex;
+    justify-content: space-between;
+}
 .element{
     height: 50px;
     width: 50px;
