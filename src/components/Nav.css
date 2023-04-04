@@ -1,0 +1,54 @@
+.element{
+    height: 50px;
+    width: 50px;
+    z-index: 10;
+}
+.nav{
+    background-color: black;
+    position: relative;
+    height: 2px;
+    width: 30px;
+    transition: all .5s linear;
+}
+.nav::before{
+    content: "";
+    position: absolute;
+    background-color: black;
+    height: 2px;
+    width: 30px;
+    transform: translateY(-10px);
+    transition: all .5s linear;
+}
+.nav::after{
+    content: "";
+    position: absolute;
+    background-color: black;
+    height: 2px;
+    width: 30px;
+    transform: translateY(10px);
+    transition: all .5s linear;
+}
+.active-nav{
+    height: 2px;
+    width: 30px;
+    position: relative;
+    transition: all .5s linear;
+}
+.active-nav::before{
+    content: "";
+    position: absolute;
+    background: black;
+    height: 2px;
+    width: 30px;
+    transition: all .5s linear;
+    transform: rotate(45deg) ;
+}
+.active-nav::after{
+    content: "";
+    position: absolute;
+    background:black;
+    height: 2px;
+    width: 30px;
+    transition: all .5s linear;
+    transform: rotate(-45deg) ;
+}
