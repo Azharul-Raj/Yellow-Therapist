@@ -1,30 +1,4 @@
-/* .main{
-    display: flex; 
-    justify-content: space-between;
-} */
-/* .main{
-    transition: all 2s ease;
-} */
-/* .inactive-nav{
-    position: fixed;
-    height: 100vh;
-    width: 100%;
-    background: cyan;
-    transform: translateX(100%) ;
-    transition: all .5s linear;
-} */
-/* .side-nav{
-    position: fixed;
-    height: 100vh;
-    width: 100%;
-    background: cyan;
-    transform: translateX(50%);
-    transition: all .5s linear;
-} */
-.wrapper{
-    display: flex;
-    justify-content: space-between;
-}
+
 .element{
     height: 50px;
     width: 50px;
@@ -32,19 +6,45 @@
 }
 .nav{
     background-color: black;
+}
+.nav,
+.active-nav{    
     position: relative;
     height: 2px;
     width: 30px;
     transition: all .5s linear;
 }
-.nav::before{
+.nav::before,
+.nav::after,
+.active-nav::before,
+.active-nav::after{
     content: "";
     position: absolute;
     background-color: black;
     height: 2px;
     width: 30px;
-    transform: translateY(-10px);
     transition: all .5s linear;
+}
+.nav::before{
+    transform: translateY(-10px);
+}
+.nav::after{
+    transform: translateY(10px);
+}
+.active-nav::before{
+    transform: rotate(45deg) ;
+}
+.active-nav::after{
+    transform: rotate(-45deg) ;
+}
+/* .nav::before{
+    content: "";
+    position: absolute;
+    background-color: black;
+    height: 2px;
+    width: 30px;
+    transition: all .5s linear;
+    transform: translateY(-10px);
 }
 .nav::after{
     content: "";
@@ -54,14 +54,14 @@
     width: 30px;
     transform: translateY(10px);
     transition: all .5s linear;
-}
-.active-nav{
+} */
+/* .active-nav{
     height: 2px;
     width: 30px;
     position: relative;
     transition: all .5s linear;
-}
-.active-nav::before{
+} */
+/* .active-nav::before{
     content: "";
     position: absolute;
     background: black;
@@ -78,4 +78,4 @@
     width: 30px;
     transition: all .5s linear;
     transform: rotate(-45deg) ;
-}
+} */

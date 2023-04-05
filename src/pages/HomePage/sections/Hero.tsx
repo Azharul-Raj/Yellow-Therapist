@@ -3,7 +3,7 @@ import React from 'react'
 export default function Hero() {
   return (
     <>
-    <div className='grid grid-cols-12 place-items-center'>
+    <div className='grid grid-cols-12 place-items-center mt-44'>
         <div className="col-span-6 h-[80%]">
           <img src="https://html.designingmedia.com/medtech/assets/image/banner-left-img.png" alt="" />
         </div>

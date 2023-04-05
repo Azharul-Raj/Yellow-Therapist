@@ -1,17 +1,18 @@
+import { BrowserRouter, Route, Router, Routes } from 'react-router-dom';
 import './App.css';
 import Footer from './components/Footer';
 import Nav from './components/Nav';
 import HomePage from './pages/HomePage/HomePage';
+import Main from './layout/Main/Main';
 
 function App() {
 
   return (
-    <>
-     <HomePage/>
-    <div className="px-[5%] bg-yellow-100">
-    </div>
-    <Footer/>
-    </>
+   <Routes>
+      <Route path='/' element={<Main/>}>
+        <Route path='/' element={<HomePage/>}/>
+      </Route>
+   </Routes>
   )
 }
 
