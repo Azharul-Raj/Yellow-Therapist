@@ -1,44 +1,40 @@
 import React from 'react'
+import booksImg from '../../../assets/books.jpg'
+import { category1, category2 } from '../../../data/data'
 
 export default function Hero() {
   return (
     <>
-    <div className='grid grid-cols-12 place-items-center mt-44'>
-        <div className="col-span-6 h-[80%]">
-          <img src="https://html.designingmedia.com/medtech/assets/image/banner-left-img.png" alt="" />
+      <div className='grid grid-cols-12 md:gap-5 lg:gap-16 px-[2%] md:px-[8%] place-items-center bg-gray-100  py-24'>
+        {/* image part */}
+        <div className="col-span-12 md:col-span-6 lg:col-span-4">
+          <img src={booksImg} alt="" />
         </div>
-        {/* right col */}
-        <div className="col-span-6 space-y-5">
-            <h5 className='font-bold text-xl'>Healthy. Everyday.</h5>
-            <h2 className='font-[900] text-6xl leading-[70px]'>We are Providing Best and Affordable Healthcare</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-            <button className="px-6 font-semibold py-4 bg-yellow-400 duration-1000 rounded-full shadow-lg hover:-translate-y-2 hover:bg-sky-800 hover:text-white hover:transition-all hover:duration-1000">Book Now</button>
-        </div>        
-    </div>
-    <div className='grid grid-cols-12 place-items-center '>
-        {/* right col */}
-        <div className="col-span-6 space-y-5">
-            <h2 className='font-[900] text-5xl leading-[50px]'>Our Quality System is Ready to Help You!</h2>
-            <p>Seram ipsum dolor sit amet, consectetur adipiscing elit, sed do eius mod tempor incididunt.</p>
-            <p>Seram ipsum dolor sit amet, consectetur adipiscing elit, sed do eius mod tempor incididunt.</p>
-            <div className="grid grid-cols-12">
-              <div className="col-span-6">
-                <li>24 Hour Service</li>
-                <li>Emergency Cases</li>
-                <li>Expert Doctors</li>
-              </div>
-              <div className="col-span-6">
-                <li>Update Covid-19</li>
-                <li>24/7 Help Center</li>
-                <li>Modern Clinic</li>
-              </div>
-            </div>
-            <button className="px-6 font-semibold py-4 bg-yellow-400 duration-1000 rounded-full shadow-lg hover:-translate-y-2 hover:bg-sky-800 hover:text-white hover:transition-all hover:duration-1000">Make An Appointment</button>
-        </div>        
-        <div className="col-span-6 h-[80%]">
-          <img src="https://html.designingmedia.com/medtech/assets/image/quality-system-img.png" alt="" />
+        {/* text part */}
+        <div className="col-span-12 md:col-span-6 lg:col-span-8 mt-5 md:mt-0 lg:space-y-5">
+          <h2 className='text-2xl lg:text-[55px] text-gray-700 font-bold text-center md:text-start '>Discover book <span className='text-blue-800'>categories</span> </h2>
+          <h4 className='font-bold text-center text-lg md:text-start '>Take a look at categories and discover the book</h4>
+          <p className='text-center md:text-start'>Gain is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances.</p>
+        <div className="flex justify-between lg:justify-start">
+          {/* left list */}
+          <div className="">
+            {
+              category1.map((category,i)=><li className='list-none' key={i}>
+                ✅
+                {category.name}</li>)
+            }
+          </div>
+          {/* right list */}
+          <div className="lg:pl-20">
+            {
+              category2.map((category,i)=><li className='list-none' key={i}>
+                ✅
+                {category.name}</li>)
+            }
+          </div>
         </div>
-    </div>
+        </div>
+      </div>
     </>
   )
 }

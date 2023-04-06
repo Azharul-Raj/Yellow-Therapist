@@ -28,3 +28,37 @@ const books=[
     },
 ]
 export default books;
+
+export const category1=[
+    {
+        name:"Fantasy"        
+    },
+    {name:"Adventure"},
+    {name:"Romance"},
+    {name:"Contemporary"},
+    {name:"Dystopian"},
+    {name:"Mystery"},
+    {name:"Horror"},
+    {name:"Thriller"},
+    {name:"Paranormal"},
+    {name:"Historical fiction"},
+    {name:"Science Fiction"},
+    {name:"Science Children’s"},
+]
+
+export const category2=[
+    {
+        name:"Memoir"        
+    },
+    {name:"Cookbook"},
+    {name:"Art"},
+    {name:"Self-help"},
+    {name:"Development"},
+    {name:"Motivational"},
+    {name:"Health"},
+    {name:"History"},
+    {name:"Travel"},
+    {name:"Historical"},
+    {name:"Families"},
+    {name:"Science Humor"},
+]
