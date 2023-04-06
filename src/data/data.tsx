@@ -1,6 +1,7 @@
 import greenBook from '../assets/color.png';
 import blueBook from '../assets/color-blue.png';
 import pinkBook from '../assets/color-pink.png';
+import { LightBulbIcon,NewspaperIcon,WrenchScrewdriverIcon,AcademicCapIcon } from '@heroicons/react/24/solid';
 const books=[
     {
         id:1,
@@ -61,4 +62,23 @@ export const category2=[
     {name:"Historical"},
     {name:"Families"},
     {name:"Science Humor"},
+]
+
+export const cardData=[
+    {
+        title:"Career Growth",
+        icon:<LightBulbIcon height={50} fill={'#2fca2d'}/>
+    },
+    {
+        title:"Increase Productivity",
+        icon:<NewspaperIcon height={50} fill='#2fca2d'/>
+    },
+    {
+        title:"Skill Improvement",
+        icon:<WrenchScrewdriverIcon height={50} fill='#2fca2d'/>
+    },
+    {
+        title:"Mental Growth",
+        icon:<AcademicCapIcon height={50} fill='#2fca2d'/>
+    }
 ]
