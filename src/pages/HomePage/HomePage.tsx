@@ -4,6 +4,8 @@ import Nav from '../../components/Nav'
 import Hero from './sections/Hero'
 import Slider from './sections/Slider'
 import WhySection from './sections/WhySection/WhySection'
+import Sponsors from './sections/Sponsors'
+import Pricing from './sections/Pricing'
 
 export default function HomePage() {
   return (
@@ -11,6 +13,8 @@ export default function HomePage() {
       <Slider/>
     <Hero/>
     <WhySection/>
+    <Pricing/>
+    <Sponsors/>
     </>
   )
 }
