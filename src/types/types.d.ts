@@ -10,3 +10,8 @@ export interface productProps{
         count:number;
     }
 }
+
+export interface dataProps{
+    category:string,
+    setCategory:React.Dispatch<React.SetStateAction<string>>;
+}

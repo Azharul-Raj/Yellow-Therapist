@@ -1,16 +1,18 @@
 import axios from 'axios'
-import React, { useEffect, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import toast from 'react-hot-toast';
 import Card from '../../components/Card/Card';
 import { productProps } from '../../types/types';
 import RoundSpinner from '../../components/spinners/RoundSpinner/RoundSpinner';
+import { useStore } from '../../store/Store';
 interface productList{
   products:productProps[]|any
 }
 export default function Products() {
+  const {category,setCategory}=useStore()
     const [data,setData]=useState<productProps[]|any>();
     let products:productList;
-    const [category,setCategory]=useState("All")
+    // const [category,setCategory]=useState("All")
     useEffect(()=>{
         axios.get(`https://fakestoreapi.com/products`)
         .then(res=>setData(res.data))
@@ -44,12 +46,12 @@ export default function Products() {
       {/* drop down */}
       
       <div className="mb-3">
-  <select className=' border border-spacing-2 w-28 h-12 outline-none' data-te-select-init data-te-select-visible-options="3">    
-    <option onClick={()=>setCategory('All')}  value="1">All</option>    
-    <option onClick={()=>setCategory('Men')} value="1">Men's</option>    
-    <option onClick={()=>setCategory('Women')} value="1">Women's</option>    
-    <option onClick={()=>setCategory('Jewellery')} value="1">Jewellery</option>    
-    <option onClick={()=>setCategory('Electronics')} value="1">Electronics</option>    
+  <select className=' border border-spacing-2 w-28 h-12 outline-none' onChange={(e)=>setCategory(e.target.value)} data-te-select-init data-te-select-visible-options="3">    
+    <option   value="All">All </option>    
+    <option  value="Men">Men's</option>    
+    <option  value="Women">Women's</option>    
+    <option  value="Jewellery">Jewellery</option>    
+    <option  value="Electronics">Electronics</option>    
   </select>
 </div>
 
