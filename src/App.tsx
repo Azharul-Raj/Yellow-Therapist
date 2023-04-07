@@ -7,6 +7,7 @@ import Main from './layout/Main/Main';
 import Products from './pages/Products/Products';
 import { useEffect, useState } from 'react';
 import BookSpinner from './components/spinners/BookSpinner/BookSpinner';
+import About from './pages/About/About';
 
 function App() {
   const [loading,setLoading]=useState(true);
@@ -21,6 +22,7 @@ function App() {
       <Route path='/' element={<Main/>}>
         <Route path='/' element={<HomePage/>}/>
         <Route path='/products' element={<Products/>}/>
+        <Route path='/about' element={<About/>}/>
       </Route>
    </Routes>
   )
