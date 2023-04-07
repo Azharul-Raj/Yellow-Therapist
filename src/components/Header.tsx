@@ -10,16 +10,20 @@ export default function Header() {
             link:"/"
         },
         {
+            name:"Products",
+            link:"/products"
+        },
+        {
+            name:"Booking",
+            link:"/booking"
+        },
+        {
             name:"About",
             link:"/about"
         },
         {
             name:"Contact",
             link:"/contact"
-        },
-        {
-            name:"Booking",
-            link:"/booking"
         },
     ]
   return (
