@@ -2,10 +2,11 @@ import React from 'react'
 import { productProps } from '../../types/types'
 import Review from '../Review';
 interface productData{
-    product:productProps
+    product:productProps;
+        rate:number;
 }
 
-export default function Card({product}:productData) {
+export default function Card({product,rate}:productData) {
     // console.log(product);
     const {title,image,price,description,rating}=product;
     
@@ -23,7 +24,9 @@ export default function Card({product}:productData) {
             <p className='text-sm py-1'>{description?description?.slice(0,60) +"...":"Description not found"}</p>
           <div className="flex justify-between gap-2">
             <span className="mb-0.5 text-gray-900 ">${price}</span>
-            <span className="font-bold text-gray-800 lg:text-lg flex items-center">{rating?.rate} <Review count={rating?.rate}/></span>
+            <span className="font-bold text-gray-800 lg:text-lg flex items-center">{rate} 
+             <Review count={rate}/></span>
+                
           </div>
         </div>
         </div>

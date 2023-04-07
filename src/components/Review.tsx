@@ -3,7 +3,9 @@ import React from 'react'
     count:number
  }
 export default function Review({count}:countProps) {
-    if(count==1||1.1||1.2||1.3||1.4){
+    
+    
+    if(count===1||count===1.1|| count===1.2|| count===1.3||count===1.4||count==1.5||count==1.6||count==1.7 || count==1.8 || count==1.9){
         return (
             <div className="ml-1 flex gap-0.5">
               <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-yellow-400" viewBox="0 0 20 20" fill="#FACC15">
@@ -27,7 +29,7 @@ export default function Review({count}:countProps) {
             </div>
         )
     }
-    if(count==2||2.1||2.2||2.3||2.4){
+    if(count===2||count===2.1|| count===2.2|| count===2.3||count===2.4||count==2.5||count==2.6||count==2.7 || count==2.8 || count==2.9){
         return (
             <div className="ml-1 flex gap-0.5">
               <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-yellow-400" viewBox="0 0 20 20" fill="#FACC15">
@@ -51,7 +53,7 @@ export default function Review({count}:countProps) {
             </div>
         )
     }
-    if(count==3||3.1||3.2||3.3||3.4){
+    if(count===3||count===3.1|| count===3.2|| count===3.3||count===3.4||count==3.5||count==3.6||count==3.7 || count==3.8 || count==3.9){
         return (
             <div className="ml-1 flex gap-0.5">
               <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-yellow-400" viewBox="0 0 20 20" fill="#FACC15">
@@ -73,7 +75,7 @@ export default function Review({count}:countProps) {
             </div>
         )
     }
-    if(count==4||4.1||4.2||4.3||4.4){
+    if(count===4||count===4.1|| count===4.2|| count===4.3||count===4.4||count==4.5||count==4.6||count==4.7 || count==4.8 || count==4.9){
         return (
             <div className="ml-1 flex gap-0.5">
               <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-yellow-400" viewBox="0 0 20 20" fill="#FACC15">
