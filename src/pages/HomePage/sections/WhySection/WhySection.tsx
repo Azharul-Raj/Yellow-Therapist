@@ -11,7 +11,7 @@ export default function WhySection() {
             {
               cardData.map((card,i)=>(
 
-              <div className="col-span-12 hover:bg-gradient-to-br rounded-lg from-[#ffbc00] to-red-400 lg:col-span-3  md:col-span-6 h-80 w-72 shadow-lg place-items-center">
+              <div key={i} className="col-span-12 hover:bg-gradient-to-br rounded-lg from-[#ffbc00] to-red-400 lg:col-span-3  md:col-span-6 h-80 w-72 shadow-lg place-items-center">
               <div className="flex flex-col justify-center items-center space-y-5 pt-12">
                 {card.icon}
                 <h4 className='font-bold'>{card.title}</h4>

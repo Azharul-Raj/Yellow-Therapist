@@ -13,10 +13,10 @@ export default function Header() {
             name:"Products",
             link:"/products"
         },
-        {
-            name:"Booking",
-            link:"/booking"
-        },
+        // {
+        //     name:"Booking",
+        //     link:"/booking"
+        // },
         {
             name:"About",
             link:"/about"
@@ -31,7 +31,7 @@ export default function Header() {
         <div className="">
             <div className="flex justify-between">
             {/* logo */}
-                <img className='h-12 w-28' src={logo} alt="logo" />
+              <Link to={"/"}>  <img className='h-12 w-28' src={logo} alt="logo" /></Link>
                 <div onClick={()=>setOpen(!open)} className="mt-5 cursor-pointer lg:hidden">
                     <div className={` ${open?"active-nav":"nav"}`}>
 

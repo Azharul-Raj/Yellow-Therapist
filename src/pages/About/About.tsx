@@ -174,7 +174,7 @@ export default function About() {
         </div>
 
         <div>
-          <div className="text-center font-bold text-indigo-500 md:text-lg">John McCulling</div>
+          <div className="text-center font-bold text-indigo-500 md:text-lg">Shohanur Rahman</div>
           <p className="mb-3 text-center text-sm text-gray-500 md:mb-4 md:text-base">Founder / CEO</p>
 
           {/* <!-- social - start --> */}
@@ -205,7 +205,7 @@ export default function About() {
         </div>
 
         <div>
-          <div className="text-center font-bold text-indigo-500 md:text-lg">Kate Berg</div>
+          <div className="text-center font-bold text-indigo-500 md:text-lg">Rokibul Islam</div>
           <p className="mb-3 text-center text-sm text-gray-500 md:mb-4 md:text-base">CFO</p>
 
           {/* <!-- social - start --> */}
@@ -236,7 +236,7 @@ export default function About() {
         </div>
 
         <div>
-          <div className="text-center font-bold text-indigo-500 md:text-lg">Greg Jackson</div>
+          <div className="text-center font-bold text-indigo-500 md:text-lg">Fardi Hasan</div>
           <p className="mb-3 text-center text-sm text-gray-500 md:mb-4 md:text-base">CTO</p>
 
           {/* <!-- social - start --> */}
@@ -267,8 +267,8 @@ export default function About() {
         </div>
 
         <div>
-          <div className="text-center font-bold text-indigo-500 md:text-lg">Robert Greyson</div>
-          <p className="mb-3 text-center text-sm text-gray-500 md:mb-4 md:text-base">Creative Director</p>
+          <div className="text-center font-bold text-indigo-500 md:text-lg">Estiak Sourov</div>
+          <p className="mb-3 text-center text-sm text-gray-500 md:mb-4 md:text-base">Bord Director</p>
 
           {/* <!-- social - start --> */}
           <div className="flex justify-center">
@@ -298,8 +298,8 @@ export default function About() {
         </div>
 
         <div>
-          <div className="text-center font-bold text-indigo-500 md:text-lg">John Roberts</div>
-          <p className="mb-3 text-center text-sm text-gray-500 md:mb-4 md:text-base">Investor Relations</p>
+          <div className="text-center font-bold text-indigo-500 md:text-lg">Racel Rony</div>
+          <p className="mb-3 text-center text-sm text-gray-500 md:mb-4 md:text-base">Marketing Manager</p>
 
           {/* <!-- social - start --> */}
           <div className="flex justify-center">
@@ -329,8 +329,8 @@ export default function About() {
         </div>
 
         <div>
-          <div className="text-center font-bold text-indigo-500 md:text-lg">Judy Amandez</div>
-          <p className="mb-3 text-center text-sm text-gray-500 md:mb-4 md:text-base">Senior Art Director</p>
+          <div className="text-center font-bold text-indigo-500 md:text-lg">Hridhy Ahmed</div>
+          <p className="mb-3 text-center text-sm text-gray-500 md:mb-4 md:text-base">Frontend Developer</p>
 
           {/* <!-- social - start --> */}
           <div className="flex justify-center">
@@ -360,8 +360,8 @@ export default function About() {
         </div>
 
         <div>
-          <div className="text-center font-bold text-indigo-500 md:text-lg">Rahul Williams</div>
-          <p className="mb-3 text-center text-sm text-gray-500 md:mb-4 md:text-base">Creative Director</p>
+          <div className="text-center font-bold text-indigo-500 md:text-lg">Nazmus Sakib</div>
+          <p className="mb-3 text-center text-sm text-gray-500 md:mb-4 md:text-base">Full Stack Developer</p>
 
           {/* <!-- social - start --> */}
           <div className="flex justify-center">
@@ -391,8 +391,8 @@ export default function About() {
         </div>
 
         <div>
-          <div className="text-center font-bold text-indigo-500 md:text-lg">Ari Ferris</div>
-          <p className="mb-3 text-center text-sm text-gray-500 md:mb-4 md:text-base">Marketing Analyst</p>
+          <div className="text-center font-bold text-indigo-500 md:text-lg">Faozia Ashraf</div>
+          <p className="mb-3 text-center text-sm text-gray-500 md:mb-4 md:text-base">Backend developer</p>
 
           {/* <!-- social - start --> */}
           <div className="flex justify-center">
